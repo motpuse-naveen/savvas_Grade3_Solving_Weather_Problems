@@ -1,5 +1,1594 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body></body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grade 3 - Science – Solving Weather Problems</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--<link rel="stylesheet" href="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fonts-new.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/device.css">
+    <script src="assets/json/main.json"></script>
+    <script src="assets/jslib/jquery_3.1.1/jquery_3.1.1.min.js"></script>
+    <script src="assets/jslib/jquery_ui_1.12.1/jquery_ui_1.12.1.js"></script>
+    <script src="assets/jslib/jquery-ui-touch/jquery.ui.touch.js"></script>
+</head>
+
+<body class="black">
+    <div class="container-fs bb fixed-head-bar annimmenu">
+        <div class="container-mxw">
+            <nav class="topMenuBar2">
+                <ul class="menu d-flex">
+                    <li class="flex-fill">
+                        <a href="#" id="tablinkfirst" class="link-tab active" data-tabid="slide-before-reading"
+                            slideNumber="1" role="tab" aria-selected="true" aria-controls="slide-before-reading">Get
+                            Started</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext1" class="link-tab inactive" data-tabid="slide-text1" slideNumber="2"
+                            role="tab" aria-selected="false" aria-controls="slide-text1">Text 1</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext2" class="link-tab inactive" data-tabid="slide-text2" slideNumber="3"
+                            role="tab" aria-selected="false" aria-controls="slide-text2">Text 2</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext3" class="link-tab inactive" data-tabid="slide-text3" slideNumber="4"
+                            role="tab" aria-selected="false" aria-controls="slide-text3">Text 3</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext4" class="link-tab inactive" data-tabid="slide-text4" slideNumber="5"
+                            role="tab" aria-selected="false" aria-controls="slide-text4">Text 4</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinktext5" class="link-tab inactive" data-tabid="slide-text5" slideNumber="6"
+                            role="tab" aria-selected="false" aria-controls="slide-text5">Text 5</a>
+                    </li>
+                    <li class="flex-fill">
+                        <a href="#" id="tablinklast" class="link-tab inactive" data-tabid="slide-after-reading"
+                            slideNumber="7" role="tab" aria-selected="false" aria-controls="slide-after-reading">Wrap It
+                            Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="top-mobile-menu-button homescreen">
+                <button id="mobileMenuButton" role="button" aria-expanded="false"></button>
+                <div class="nav-title disnone">
+                    <h1>About The Book</h1>
+                </div>
+                <div class="mobile-menu disnone" aria-hidden="true">
+                    <div class="mobile-menu-overlay"></div>
+                    <div class="mobile-menu-wrap">
+                        <div class="mobile-menu-container">
+                            <ul class="top-menu">
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinkfirst" class="link-tab active"
+                                        data-tabid="slide-before-reading" slideNumber="1" role="tab"
+                                        aria-selected="true" aria-controls="slide-before-reading">Get
+                                        Started</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext1" class="link-tab inactive" data-tabid="slide-text1"
+                                        slideNumber="2" role="tab" aria-selected="false"
+                                        aria-controls="slide-text1">Text 1</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext2" class="link-tab inactive" data-tabid="slide-text2"
+                                        slideNumber="3" role="tab" aria-selected="false"
+                                        aria-controls="slide-text2">Text 2</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext3" class="link-tab inactive" data-tabid="slide-text3"
+                                        slideNumber="4" role="tab" aria-selected="false"
+                                        aria-controls="slide-text3">Text 3</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext4" class="link-tab inactive" data-tabid="slide-text4"
+                                        slideNumber="5" role="tab" aria-selected="false"
+                                        aria-controls="slide-text4">Text 4</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinktext5" class="link-tab inactive" data-tabid="slide-text5"
+                                        slideNumber="6" role="tab" aria-selected="false"
+                                        aria-controls="slide-text5">Text 5</a>
+                                </li>
+                                <li aria-hidden="true" class="top-menu-item-sep">
+                                    <hr>
+                                </li>
+                                <li class="top-menu-item">
+                                    <a href="#" id="tablinklast" class="link-tab inactive"
+                                        data-tabid="slide-after-reading" slideNumber="7" role="tab"
+                                        aria-selected="false" aria-controls="slide-after-reading">Wrap It
+                                        Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="slide-before-reading" class="container-fs slide slide-before-reading active annim-fade white-bg">
+        <div class="banner-bg"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar annim2">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_1" href="#scrollTop_s1_1">In This
+                                    Text Set</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_2" href="#scrollTop_s1_2">Standards
+                                    and Objectives</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_3" href="#scrollTop_s1_3">Big
+                                    Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_4" href="#scrollTop_s1_4">Hooks</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_5" href="#scrollTop_s1_5">Discuss the
+                                    Big Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s1_6" href="#scrollTop_s1_6">Vocabulary
+                                    Across Texts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap annim1">
+                    <h1 class="title">Solving Weather Problems</h1>
+                </div>
+                <div class="card-wrap-container">
+                    <button id="buttonCarouselPrev"></button>
+                    <div class="card-wrap row">
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-1">
+                                <div class="card-cover-img img1 annim4-11">
+                                    <span class="imageText">
+                                        <!-- Text 1<br> -->
+                                        <!-- <span class="card-text">Living in Places with Extreme Weather</span> -->
+                                    </span>
+                                    <div id="card-back-In-the-Sky" class="card-back">
+                                        <p class="bold">Living in Places with Extreme Weather</p>
+                                        <p class="normal">
+                                            <span class="bold">Word Count: </span><span>516</span><br>
+                                            <span class="bold">Lexile: </span><span>720</span><br>
+                                            <span>by Michael Patiño</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>Problem and Solution</span>
+                                        </p>
+                                        <p class="normal">
+                                            This <span class="bold">informational text</span> provides details about homes designed to face a variety of weather-related issues.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-111">
+                                    <a href="#" data-tablinkid="tablinktext1" class="card-link card-text">Living in Places with Extreme Weather</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-2">
+                                <div class="card-cover-img img2 annim4-22">
+                                    <!-- <span class="imageText">Text 2</span> -->
+                                    <div id="card-back-Star-Pictures" class="card-back">
+                                        <p class="bold">Raising Chicago</p>
+                                        <p class="normal">
+                                            <span>by Ezra Greene</span><br>
+                                            <span class="bold">Word Count:</span><span>705</span><br>
+                                            <span class="bold">Lexile:</span><span>710</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>Problem and Solution</span>
+                                        </p>
+                                        <p class="normal">
+                                            This <span class="bold">informational text</span> explains how Chicagoans raised the level of the streets and sidewalks during the mid-1800s to meet flooding challenges.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-222">
+                                    <a href="#" data-tablinkid="tablinktext2" class="card-link card-text">Raising Chicago</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-3">
+                                <div class="card-cover-img img3 annim4-33">
+                                    <!-- <span class="imageText">Text 3<br><span class="card-text">Video</span></span> -->
+
+                                    <!-- <span class="imageicon" style="z-index: 999;"><i class="fa fa-play-circle"
+                                        style="font-size: 24px;"></i></span> -->
+                                    <div id="card-back-Observing-Moon-Phases" class="card-back">
+                                        <p class="bold">Staying Safe from Hurricanes</p>
+                                        <p class="normal">
+                                            <span>by Andrea Kennedy</span>
+                                            <span class="bold">Word Count:</span><span>486</span><br>
+                                            <span class="bold">Lexile:</span><span>810</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>Cause and Effect</span>
+                                        </p>
+                                        <p class="normal">
+                                            This <span class="bold">informational text</span> provides details to explain safety steps in hurricane preparation.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-333">
+                                    <a href="#" data-tablinkid="tablinktext3" class="card-link card-text">Staying Safe from Hurricanes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-4">
+                                <div class="card-cover-img img4 annim4-44">
+                                    <!-- <span class="imageText">Text 4</span> -->
+                                    <div id="card-back-Name-the-Full-Moons" class="card-back">
+                                        <p class="bold">Severe Weather in the United States</p>
+                                        <p class="normal">
+                                            <span>by Pat Davies</span><br>
+                                            <span class="bold">Word Count: </span><span>522</span><br>
+                                            <span class="bold">Lexile: </span><span>770</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>Compare and Contrast</span>
+                                        </p>
+                                        <p class="normal">
+                                            This <span class="bold">interactive map</span> uses text, photos, and captions to compare and contrast types of severe weather in U.S. regions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-444">
+                                    <a href="#" data-tablinkid="tablinktext4" class="card-link card-text">Severe Weather in the United States</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div tabindex="0" role="button" aria-expanded="false" class="card card-button annim4-5">
+                                <div class="card-cover-img img5 annim4-55">
+                                    <!-- <span class="imageText">Text 5</span> -->
+                                    <div id="card-back-Through-a-Telescope" class="card-back">
+                                        <p class="bold">Forecasting the Weather</p>
+                                        <p class="normal">
+                                            <span>by Priscilla Chang</span><br>
+                                            <span class="bold">Word Count: </span><span>513</span><br>
+                                            <span class="bold">Lexile: </span><span>710</span>
+                                        </p>
+                                        <p class="normal">
+                                            <span class="bold">Text Structure: </span><br>
+                                            <span>Description</span>
+                                        </p>
+                                        <p class="normal">
+                                            This <span class="bold">photo essay</span> depicts and describes tools used by meteorologists as they work to develop weather forecasts.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body card-body-thumb annim4-555">
+                                    <a href="#" data-tablinkid="tablinktext5" class="card-link card-text">Forecasting the Weather</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="buttonCarouselNext"></button>
+
+                </div>
+                <div class="CarouselDots" aria-hidden="true">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="text-content annim3">
+                    <h2 id="scrollTop_s1_1">In This Text Set</h2>
+                    <p>This text set includes three informational texts, a map, and a photo essay. All deal with solving weather-related problems.</p>
+                    <p><i><span class="bold">Living in Places with Extreme Weather</span></i> is the anchor text for this set. Depending on the needs of your class, you may choose to assign <i><span class="bold">Living in Places with Extreme Weather</span></i> for independent reading, or you may choose to read it aloud with the class. Beginning with the anchor text will ground students in concepts and academic vocabulary that are key to discussing the Big Question. As students read the other texts in the set, they will compare their new understandings, as well as the structure and features of the text, with the anchor text.</p>
+                    <p>After students read the anchor text, you may choose to assign specific texts or encourage students to choose the texts that appeal to them the most. Use the chart below to see where specific text features, text structures, and content topics appear across the texts in this set.</p>
+                    <div class="table-content-scroller">
+                        <table class="table-style1" style="min-width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Grade 3 Science Text Set: Solving Weather Problems</th>
+                                    <th scope="col">Living in Places with Extreme Weather</th>
+                                    <th scope="col">Raising Chicago</th>
+                                    <th scope="col">Staying Safe from Hurricanes</th>
+                                    <th scope="col">Weather in the United States</th>
+                                    <th scope="col">Forecasting the Weather</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="trbg">
+                                    <th scope="row">Test Features</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Section Heads</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Captions</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Map</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Photographs</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr class="trbg">
+                                    <th scope="row">Text Structures</th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Descriptive</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Cause and Effect</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Problem and Solution</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2 id="scrollTop_s1_2">Standards and Objectives</h2>
+                    <ul class="style-text">
+                        <li>
+                            <p><span class="bold">Science Standard </span><br> 3-ESS3-1. Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Information Text Focus</span><br> In this text set, students will read informational texts as they recognize the ways compare-and-contrast, cause-and-effect, and problem-and-solution text structures help them understand the information they are reading. Students will also reinforce their recognition of the value of text features such as section heads, photographs, captions, and maps to enhance their understanding.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective</span><br> Students will understand types of weather hazards and evaluate ways of solving or preparing for weather-related problems.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective</span><br> Students will describe a variety of weather hazards, as well as related problems and solutions.</p>
+                        </li>
+                    </ul>
+
+                    <h2 id="scrollTop_s1_3">Big Question</h2>
+                    <p>How do people solve weather-related issues?</p>
+                    <h2 id="scrollTop_s1_4">Hooks</h2>
+                    <h3 class="blue-heading"><span class="playicon"><i class="fa fa-play"></i></span><a target="_blank" href="https://www.youtube.com/watch?v=7KDz6dGQ5RE">The Birth of a Tornado</a></h3>
+                    <div class="blue-heading-pad">
+                        <p>
+                            <!-- <span aria-hidden="true">(from 0:00 to 1:14)</span><span class="sr-only">(from 0 colon 00 to 1 colon 14)</span><br> -->
+                            Share this video to introduce students to the danger of severe weather and the importance of being prepared.
+                        </p>
+                        <p class="blue-script"><i><span class="bold">Ask:</span> How can we stay safe during powerful storms like this one? How would knowing about the storm help us prepare?</i></p>
+                    </div>
+                    <h3 class="blue-heading"><span class="playicon"><i class="fa fa-eye"></i></span><a target="_blank" href="https://hazards.umwblogs.org/files/2011/04/4.jpg">Lightning Rod</a></h3>
+                    <!-- <div class="blue-heading-pad">
+                        <div class="image-thumb"></div> -->
+                    <div class="blue-heading-pad">
+                        <p>Share this photo of a lightning rod being struck during a storm to get students thinking about weather problems and creative solutions.</p>
+                        <p class="blue-script"><i><span class="bold">Ask:</span> How do you think the lightning rod protects people during a thunderstorm?</i></p>
+                    </div>
+                    <div class="side-disclamer">
+                        <p class="bold">Disclaimer</p>
+                        <p>By clicking the highlighted text, you will be leaving the Savvas NOW Program to enter into an
+                            external website that may contain content or... <a href="javascript:void(0);"
+                                class="link-learmore">Learn More</a></p>
+                    </div>
+                    <h2 id="scrollTop_s1_5">Discuss the Big Question</h2>
+                    <!-- <p>Before students begin reading the texts in this set, engage them in a class discussion around the Big Question.</p> -->
+                    <ul class="small-bullet">
+                        <li>Why do floods and hurricanes cause big problems?</li>
+                        <li>What kinds of problems are caused by extremely cold weather?</li>
+                        <li>What are some things that people can do to stay safe in severe weather?</li>
+                        <li>How can we create safer homes and buildings that protect us from storms?</li>
+                    </ul>
+                    <h2 id="scrollTop_s1_6">Vocabulary Across Texts</h2>
+                    <p>After being introduced to key vocabulary in the anchor text, students will encounter many of the same vocabulary words and language as they read other texts in the set, presented in new contexts, and with new opportunities to use those words in writing and conversation, helping them to expand their understanding.</p>
+                    <p>The chart below shows where the vocabulary appears throughout the text set.</p>
+                    <div class="table-content-scroller">
+                        <table class="table-style2">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Content Vocabulary</th>
+                                    <th scope="col">Homes in Places with Extreme Weather</th>
+                                    <th scope="col">Raising Chicago</th>
+                                    <th scope="col">Staying Safe from Hurricanes</th>
+                                    <th scope="col">Weather in the United States</th>
+                                    <th scope="col">Forecasting the Weather</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>climate</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>evacuate</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>extreme</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>flood</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>forecast</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>hazard</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>hurricane</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>meteorologist</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>tornado</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="last-p">&nbsp;</p>
+                    <div class="table-content-scroller">
+                        <table class="table-style2">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Academic Vocabulary</th>
+                                    <th scope="col">Living in Places with Extreme Weather</th>
+                                    <th scope="col">Raising Chicago</th>
+                                    <th scope="col">Staying Safe from Hurricanes</th>
+                                    <th scope="col">Weather in the United States</th>
+                                    <th scope="col">Forecasting the Weather</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>rotating</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>issue</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>predict</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                </tr>
+                                <tr>
+                                    <td>problem(s)</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>solution</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>solve</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>material</td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td><span class="span-disc" aria-hidden="true"></span><span class="sr-only">bullet</span></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="slide-text1" class="container-fs slide slide-text1 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_1"
+                                    href="#scrollTop_s2_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_2" href="#scrollTop_s2_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_3" href="#scrollTop_s2_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_4" href="#scrollTop_s2_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s2_5" href="#scrollTop_s2_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 id="titleinthesky" class="title">Living in Places with Extreme Weather</h1>
+                    <div class="title-bottom-text">
+                        by Michael Patiño <br>Informational Text - Word Count: 516 &nbsp; Lexile: 720
+                    </div>
+                </div>
+                <div class="text-content">
+                    <div class="gray-panel">
+                        <h2 id="scrollTop_s2_1">Instructional Focus</h2>
+                        <ul>
+                            <li>
+                                <p><span class="bold">Science Standard: 1-ESS1-1.</span> Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Content Objective:</span> Students will understand strategies for creating homes able to withstand a variety of weather-related challenges.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Language Objective:</span> Students will explain which types of homes are most effective in withstanding a variety of types of weather.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Structure Objective:</span> Students will understand how a problem-and-solution structure helps explain how to solve a weather-related issue.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Feature Objective:</span> Students will understand how section heads help them recognize the kind of information they are about to read.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 id="scrollTop_s2_2">Summary</h2>
+                    <p>This text explains effective features of homes in places where people face a variety of types of extreme weather.</p>
+                    <h2 id="scrollTop_s2_3">Before Reading</h2>
+                    <p><span class="bold">Big Question:</span> Remind students of the Big Question: <i>How do people solve weather-related issues?</i> Ask: <span class="blue_scripting">How do you think <i>Living in Places with Extreme Weather</i> will help you think about the Big Question? What might be some problems in places with extreme weather? How do you think people could solve the problems?</span></p>
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the words <i><span class="bold">hazard, hurricane,</span></i> and <span class="bold">climate.</span> Discuss the meaning of each word with the class. Ask: <span class="blue_scripting">What is an example of a weather <span class="bold">hazard</span>? What are some ways people can stay safe in a <span class="bold">hurricane</span>? How would you describe the <span class="bold">climate</span> where we live?</span></p>
+
+                    <p><span class="bold">Oral Vocabulary</span> Some of the vocabulary in <i>Living in Places with Extreme Weather</i> might be new or challenging, such as solution or benefit. During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">When we have a problem, we look for a <span class="bold">solution</span>. One weather problem is that a flood could damage a house. What is a <span class="bold">solution</span> to this problem?</span> Or: <span class="blue_scripting">A <span class="bold">benefit</span> is a good thing. How do thick walls <span class="bold">benefit</span> people living in places where storms happen?</span></p>
+                    <h3 class="normaltext"><span class="bold">TWO-COLUMN CHART</span></h3>
+                    <p>Display a two-column chart with the first column labeled <i>Problems</i> and the second column labeled <i>Solutions</i>. Guide students to create similar two-column charts of their own. Encourage students to add weather problems and their solutions to the chart as they read, and include vocabulary words from the text. A completed chart might look like this:</p>
+
+                    <p>[Insert a two-column chart with headings Problems and Solutions. Include the words <i>hurricane</i> and <i>cold climate</i> under Problems, and <i>dome</i> and <i>insulation</i> under Solutions]</p>
+                    <h2 id="scrollTop_s2_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Elements Of Information Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that <i>Living in Places with Extreme Weather</i> is written with a problem-and-solution text structure. Say: <span class="blue_scripting">In each part of the text, the writer describes a problem related to the weather, then a way of solving the problem. As you read, pay attention to the problem and solution in each part.</p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Problem-and-Solution Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “tells how a problem can be solved”</p>
+                    <p><span class="bold">Text Features</span> Preview the text. Point out the word <span class="bold">Wind!</span> on page 3. Say: <span class="blue_scripting">Look at this word. It’s bigger and bolder than the rest of the words in the section, because it is the <i>heading</i>. Headings help tell what the section is about.</span> Display page 8. Ask: <span class="blue_scripting">What is the heading of this section?</span> (<span class="bold">Icy Cold Weather!</span>) Ask: <span class="blue_scripting">What does the heading tell you about the section? What do you think it will be about?</span></p>
+                    <p>Return to the T-chart. At the top of the right column write “Headings.” Work with the class to fill in the column with examples of how headings help readers understand the text. For example: “show what a section will be about”</p>
+
+                    <h2 id="scrollTop_s2_5">After Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Living in Places with Extreme Weather,</i> have them review their completed two-column charts. Ask: <span class="blue_scripting">Are there any more words you would like to add?</span>
+                    </p>
+                    <p>Display these images from <i>Living in Places with Extreme Weather</i> to help students as they think about words related to the weather, such as <i>flood, hurricane,</i> and <i>climate</i>.</p>
+                    <p>[p. 2 image: flood p. 3 image: hurricane cover image: climate]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections among Homes in Places with Extreme Weather and other texts they have read about related subjects. </p>
+                    <ul class="small-bullet">
+                        <li>In <i>Living in Places with Extreme Weather,</i> you learned about floods. What other facts have you read about floods?</li>
+                        <li><i>Living in Places with Extreme Weather</i> tells how people live in places with weather problems. What other weather problems have you read about? How do people solve the problems or prepare for them?</li>
+                        <li>Think about other texts you’ve read about extreme weather. What more did you learn from reading <i>Living in Places with Extreme Weather</i>?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a href="javascript:void(0);">Solving Weather Problems: Track the Texts</a> graphic organizer. Have them fill in the <i><span class="bold">Living in Places with Extreme Weather</span></i> row with something they learned about solving weather problems.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion related to this text’s Big Question: <i>How do people solve weather-related issues</i>? As students share their ideas, draw out more information from them with follow-up questions such as the following: “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>What problems can severe weather cause?</li>
+                        <li>How can a special way of building a home solve a weather problem?</li>
+                    </ul>
+                    <button class="blue-button mb20">Tips and Tools</button>
+                    <h3 class="normaltext"><span class="bold">Write About The Big Question</span></h3>
+                    <p>Tell students: <span class="blue_scripting">Choose one kind of weather hazard from the text. Write a sentence to explain the problem. Then, write about a type of home that helps to solve the problem. Draw the weather problem and the solution.</span></p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text2" class="container-fs slide slide-text2 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <ul role="menu">
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_1" href="#scrollTop_s3_1">Instructional
+                                Focus</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_2" href="#scrollTop_s3_2">Summary</a>
+                        </li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_3" href="#scrollTop_s3_3">Before
+                                Reading</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_4" href="#scrollTop_s3_4">During
+                                Reading</a></li>
+                        <li role="none"><a role="menuitem" refid="scrollTop_s3_5" href="#scrollTop_s3_5">After
+                                Reading</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Raising Chicago</h1>
+                    <div class="title-bottom-text">
+                        by Ezra Greene <br>Informational Text - Word Count: 705 &nbsp; Lexile: 710L
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s3_1">Instructional Focus</h2>
+                    <ul>
+                        <li>
+                            <p><span class="bold">Science Standard</span> Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective:</span> Students will understand a weather-related problem from history and evaluate solutions to the problem.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective:</span> Students will explain the flooding problem in Chicago during the 1800s and the way it was solved.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Structure Objective:</span> Students will understand how a problem-and-solution text presents a problem and its solution. They will recognize that some attempted solutions might be unsuccessful.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Feature Objective:</span> Students will understand how section headings give important information about what they are getting ready to read.</p>
+                        </li>
+                    </ul>
+                    <h2 id="scrollTop_s3_2">Summary</h2>
+                    <p>This text explains the need to solve problems with flooding that caused illness and property damage in 1850s Chicago. It explains why one attempted solution did not work and why another was successful.</p>
+                    <h2 id="scrollTop_s3_3">Before Reading</h2>
+                    <p><span class="bold">Big Question:</span> Remind students of the Big Question: <i>How do people solve weather-related issues?</i> Ask: <span class="blue_scripting">How do you think <i>Raising Chicago</i> will help you consider the Big Question? Think about the title and how it might relate to a weather-related issue or solution.</span></p>
+
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p> Have students find and read sentences in the text that have the words <span class="bold">flooding</span> and <span class="bold">moisture.</span> Discuss the meaning of each word with the class. Ask: <span class="blue_scripting">What causes <span class="bold">flooding?</span> What kinds of weather might involve <span class="bold">moisture?</span></span></p>
+                    <p><span class="bold">Oral Vocabulary</span> </p>
+                    <p>Some of the vocabulary in <i>Raising Chicago</i> might be new or challenging, such as <i><span class="bold">solution</span></i> or <i><span class="bold">issue.</span></i> During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">What are some <span class="bold">issues</span> or problems that flooding causes?</span> Or: <span class="blue_scripting">What were some <span class="bold">solutions</span> people tried? Why didn’t the first <span class="bold">solution</span> work?</span></p>
+                    <h3 class="normaltext"><span class="bold">TWO-COLUMN CHART</span></h3>
+                    <p>Share a two-column chart with the headings <i>Problems</i> and <i>Solutions.</i> Guide students to create two-column charts of their own. Encourage students to add words related to the problems and solutions from the text as they read. For example, they may add the words <i>floods</i> and <i>moisture</i> in the <i>Problems</i> column, and the words <i>planks</i> and <i>raising the streets</i> in the <i>Solutions</i> column.</p>
+                    <p>[Create two-column chart with heads Problems and Solutions. Include the following words in each column: Problems: floods, moisture Solutions: planks, raising the streets]</p>
+
+                    <h2 id="scrollTop_s3_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Elements Of Information Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that <i>Raising Chicago</i> is written with a problem-and-solution text structure. Say: <span class="blue_scripting">In this text structure, the writer first gives details about a problem or issue. Then the writer explains how people tried to fix the problem.</span> Tell students that sometimes, a problem-and-solution text will describe more than one solution to a problem. Encourage students to think about which solutions work and don’t work as they read.</p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Problem-and-Solution Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “tells how a problem can be solved,” “explains different ways of solving a problem”</p>
+                    <p><span class="bold">Text Features</span> Say: <span class="blue_scripting">Think about texts you have read that have phrases or sentences in large and bold text. These are called headings. They tell you about what you are about to read.</span> Point out the bold heading <span class="bold">A Failed Solution.</span> Ask: <span class="blue_scripting">What do you think this section will be about?</span> Guide students to understand that the heading tells them they will read about a solution that was tried, but didn’t work.</p>
+                    <p>Return to the T-chart. At the top of the right column write “Headings.” Work with the class to fill in the column with examples of how pictures help readers understand the text. For example: “tell topic or main idea of a section”</p>
+
+                    <h2 id="scrollTop_s3_5">After Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Raising Chicago,</i> have them review their completed three-column charts. Ask: <span class="blue_scripting">Are there any more words you would like to add?</span></p>
+                    <p>Display these images from <i>Raising Chicago</i> to help students as they think about words related to flooding, such as <i>flood, issue,</i> and <i>solution.</i></p>
+                    <p>[flood: p. 4 image of lake and river in Chicago issue: p. 3 image of Chicago from Currier & Ives solution: p. 8 image of city being raised]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Text</span></h3>
+                    <p>Encourage students to make connections between <i>Raising Chicago</i> and other texts they have read about related subjects.</p>
+                    <ul class="small-bullet">
+                        <li>In <i>Raising Chicago</i>, you learned about a problem with floods. What facts have you read in other texts about floods?</li>
+                        <li><i>Raising Chicago</i> tells a solution for flooding that failed. What else have you read about solutions to weather problems? How well did they work?</li>
+                        <li>In <i>Living in Places with Extreme Weather</i>, you read about ways of building homes in places with flooding problems. How does that information relate to what you read in <i>Raising Chicago</i>?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a href="javascript:void(0);">Solving Weather Problems: Track the Texts</a> graphic organizer. Have them fill in the <i><span class="bold">Raising Chicago</span></i> row with something they learned about flooding or solving problems with floods.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion related to this text’s Big Question: <i>How do people solve weather-related issues?</i> As students share their ideas, draw out more information from them with follow-up questions such as the following: “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>Why did the first solution to the flooding problem fail?</li>
+                        <li>Was raising Chicago’s streets and buildings a good solution? Why or why not?</li>
+                        <li>What other solutions might work for problems with flooding?</li>
+                    </ul>
+                    <button class="blue-button mb20">Activity Support</button>
+                    <h3 class="normaltext"><span class="bold">Write About The Big Question</span></h3>
+                    <p>Tell students: <span class="blue_scripting">Suppose that you are a newspaper reporter in Chicago during the 1800s. Write a story about raising the city streets and buildings. Explain what the workers did and why they did it.</span></p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text3" class="container-fs slide slide-text3 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_1"
+                                    href="#scrollTop_s4_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_2" href="#scrollTop_s4_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_3" href="#scrollTop_s4_3">Before Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_4" href="#scrollTop_s4_4">During Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s4_5" href="#scrollTop_s4_5">After Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Staying Safe from Hurricanes</h1>
+                    <div class="title-bottom-text">
+                        by Andrea Kennedy <br>Informational Text - Word Count: 486 &nbsp; Lexile: 810
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s4_1">Instructional Focus</h2>
+                    <ul>
+                        <li>
+                            <p><span class="bold">Science Standard</span> Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective</span> Students will understand how hurricanes form and learn methods for remaining safe during a hurricane.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective</span> Students will explain ways to stay safe during hurricanes.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Structure Objective</span> Students will understand how a cause-and-effect text explains what happens and why the event(s) happened.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Feature Objective</span> Students will understand how a list can help them understand the information in a text.</p>
+                        </li>
+                    </ul>
+                    <h2 id="scrollTop_s4_2">Summary</h2>
+                    <p>This text explains the dangers people face from hurricanes and the ways people can stay safe from these dangers.</p>
+                    <h2 id="scrollTop_s4_3">Before Reading</h2>
+                    <p><span class="bold">Big Question:</span> Remind students of the Big Question: <i>How do people solve weather-related issues? </i> Ask: <span class="blue_scripting">How do you think <i>Staying Safe from Hurricanes</i> will help you consider the Big Question? What problems do hurricanes cause? How can people solve these problems?</span></p>
+
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the words <i><span class="bold">evacuate, hurricane,</span> and <span class="bold">meteorologists.</span></i> Discuss the meaning of each word with the class. Ask: <span class="blue_scripting">What kind of weather would mean people might need to <span class="bold">evacuate?</span> What is a synonym for the word <i><span class="bold">rotating?</span></i></span> (Possible responses: <i>spinning, revolving</i>) <span class="blue_scripting">Why do we count on <span class="bold">meteorologists</span> to help us?</span></p>
+                    <p><span class="bold">Oral Vocabulary</span> Some of the vocabulary in <i>Staying Safe from Hurricanes</i> might be new or challenging, such as <i>predict</i> and <i>material.</i> During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">What <span class="bold">material</span> would protect a house from strong winds?</span> Or: <span class="blue_scripting">When you predict something, you think that it will happen. How can someone <span class="bold">predict</span> a storm?</span></p>
+                    <h3 class="normaltext"><span class="bold">Two-Column Chart</span></h3>
+                    <p>Share a two-column chart. To guide critical thinking about weather problems and their solutions, have students create two-column charts of their own, labeling the first column <i>Problem</i> and the second column <i>Solution.</i> Encourage students to use vocabulary words as they think of problems and solutions to add to their charts—for example, the word <i>danger from a hurricane</i> in the Problem column, with the corresponding word <i>evacuate</i> in the <i>Solution</i> column.</p>
+                    <p>[Create two-column chart with heads Problems and Solutions. Include the following words in each column: Problems: hurricanes, floods Solutions: evacuate, build homes from strong materials, create barrier]</p>
+
+                    <h2 id="scrollTop_s4_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Elements of Informational Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that most of <i>Staying Safe from Hurricanes</i> has a cause-and-effect text structure. Say: <span class="blue_scripting">An effect is an event that happens. A cause is why an event happens. Look for clue words that describe causes and effects, such as <i>because and as a result.</i></span> Direct students to page 5. Guide them to identify clue words for a cause-and-effect structure, such as <i>effects, cause,</i> and <i>lead to.</i></p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Cause-and-Effect Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “tells why events happen”</p>
+                    <p><span class="bold">Text Features</span> Say: <span class="blue_scripting">Think about texts you have you read that have lists. Lists can do many jobs. For example, a list can tell how to do something important. It can help readers find information quickly.</span> Direct students’ attention to the list on page 8. Ask: <span class="blue_scripting">What information does a reader find in this list? Guide students to understand that the list gives information that a reader can quickly read and easily remember when learning how to stay safe in a hurricane.</span>
+                    </p>
+                    <p>Return to the T-chart. At the top of the right column write “Lists.” Work with the class to fill in the column with examples of how lists help readers understand the text. For example: “help readers find information quickly”</p>
+
+                    <h2 id="scrollTop_s4_5">After Viewing</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Staying Safe from Hurricanes</i>, have them review their completed three-column charts. Ask: <span class="blue_scripting">Are there any more words you would like to add?</span> </p>
+                    <p>Display these images from <i>Staying Safe from Hurricanes</i> to help students as they think about words related to severe weather, including <i><span class="bold">evacuate, hurricane,</span></i> and <i><span class="bold">materials</span></i>.</p>
+                    <p>[images from the book for each word for the teacher to project: evacuate: p. 7: evacuation route sign hurricane: cover/p. 1: damage from Hurricane Irma materials: p. 10 concrete materials for house]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections between <i>Staying Safe from Hurricanes</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li>In <i>Staying Safe from Hurricanes</i>, you learned about the problems created by hurricanes––and the ways to be safe. What facts have you read in other texts about hurricanes or other powerful storms?</li>
+                        <li><i>Staying Safe from Hurricanes</i> explains why a hurricane is dangerous. What other texts have you read that explain why a type of extreme weather is dangerous?</li>
+                        <li>Think about information you learned from reading Living in Places with Extreme Weather. As you’ve read <i>Staying Safe from Hurricanes,</i> what other facts have you learned about preparing a home for hurricanes?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts:</span> After the discussion, have students return to the <a href="javascript:void(0);">Solving Weather Problems: Track the Texts</a> graphic organizer. Have them fill in the <i><span class="bold">Staying Safe from Hurricanes</span></i> row with something they learned about preparing for severe weather.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion related to this text’s Big Question: <i>How do people solve weather-related issues?</i> As students share their ideas, draw out more information from them with follow-up questions such as the following: “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>Why is it important to prepare for a hurricane?</li>
+                        <li>If you were preparing for a hurricane, what would you do first? Why?</li>
+                    </ul>
+                    <button class="blue-button mb20">Activity Support</button>
+                    <h3 class="normaltext"><span class="bold">Write About the Big Question</span></h3>
+                    <p>Tell students: <span class="blue_scripting">Imagine that you’re a meteorologist, someone who studies the weather and tells people about the kind of weather to expect. Write a short weather report. In your report, explain how you know a hurricane is coming. Tell at least three things people should do to prepare.</span></p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text4" class="container-fs slide slide-text4 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_1"
+                                    href="#scrollTop_s5_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_2" href="#scrollTop_s5_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_3" href="#scrollTop_s5_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_4" href="#scrollTop_s5_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s5_5" href="#scrollTop_s5_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Severe Weather in the United States</h1>
+                    <div class="title-bottom-text">
+                        by Pat Davies <br>Interactive Map - Word Count: 522 &nbsp; Lexile: 770
+                    </div>
+                </div>
+                <div class="text-content">
+                    <div class="instructional-Panel">
+                        <div class="right-image-wrap">
+                            <figure class="right-image">
+                                <img src="assets/images/moons.png" style="width:100%" alt="Name the Full Moons"
+                                    aria-hidden="true">
+                                <figcaption>
+                                    <a class="normlink" href="#" id="linkNameTheFullMoon">Name the Full Moons</a>
+                                    <p><a href="https://us-school.pk12ls.com/school/5c8c7b71-360b-4c3c-b68d-e0a89e612c50/A0775694/player.html"
+                                            target="_blank" id="linkStudentTextPreview" class="graylink">Student Text
+                                            Preview</a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <h2 id="scrollTop_s5_1">Instructional Focus</h2>
+                        <ul>
+                            <li>
+                                <p><span class="bold">Science Standard</span> Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Content Objective</span> Students will understand weather hazards in regions across the United States.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Language Objective</span> Students will explain similarities and differences among types of severe weather.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Structure Objective</span> Students will compare and contrast types of severe weather and weather hazards in U.S. regions.</p>
+                            </li>
+                            <li>
+                                <p><span class="bold">Text Feature Objective</span> Students will understand how photographs and captions can provide additional information about details in a map.</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <h2 id="scrollTop_s5_2">Summary</h2>
+                    <p>This text provides an interactive map that allows students to click on and learn about severe weather and weather hazards in regions across the United States. Photos with captions offer additional facts regarding the information provided through the map.</p>
+                    <h2 id="scrollTop_s5_3">Before Reading</h2>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Big Question</span></h3>
+                    <p>Remind students of the Big Question: How do people solve weather-related issues? Ask: <span class="blue_scripting">How do you think <i>Severe Weather in the United States</i> will help you think about the Big Question? How might understanding weather problems help people think about solutions?</span></p>
+
+                    <h3 class="normaltext"><span class="bold uppercase">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the words <i><span class="bold">tornado, hazards,</span> and <span class="bold">climate</span></i>. Discuss the meaning of each word with the class. Ask: <span class="blue_scripting">What kind of storm is a <span class="bold">tornado?</span> What are some other examples of weather <span class="bold">hazards or problems?</span> What is the difference between <span class="bold">weather</span> and <span>climate</span>?</span></p>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Oral Vocabulary</span></h3>
+                    <p> Some of the vocabulary in <i>Raising Chicago</i> might be new or challenging, such as <i><span class="bold">materials</span>  or <span class="bold">forecast.</span></i> During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">What <span class="bold">materials</span> can help protect homes from wind?</span> Or: <span class="blue_scripting">A <span class="bold">forecast</span> is a prediction. What would you expect to see in a weather forecast?</span></p>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">TWO-COLUMN CHART</span></h3>
+                    <p>Display a two-column chart and have students create two-column charts of their own, labeling the first column <i>Problems</i> and the second column <i>Solutions</i>. Encourage students to use vocabulary words as they think of problems and solutions to add to their charts as they read. For example, students might add the phrase <i>hazards in high temperatures</i> in the <i>Problems</i> column, with these corresponding phrases in the <i>Solution column: stay inside; drink water; wear loose clothing.</i></p>
+                    <p>[Create two-column chart with heads Problems and Solutions. Include the following words in each column: Problems: hurricanes, floods Solutions: evacuate, build homes from strong materials, create barrier]</p>
+
+                    <div style="text-align: center;">
+                        <img src="assets/images/TextSets_WordCloud_Moon_Text4.svg" alt="Moon Word Web"
+                            style="width: 100%;max-width: 600px;">
+                    </div>
+
+                    <h2 id="scrollTop_s5_4">During Reading</h2>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Elements of Informational Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that <i>Severe Weather in the United States</i> is written with a compare-and-contrast text structure. Say: <span class="blue_scripting">Sometimes, writers organize information by showing how things are alike and different. As you read this text, look for similarities and differences in different climates.</span></p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Compare-and-Contrast Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “tells how things are alike and different”</p>
+                    <p><span class="bold">Text Features</span> Say: <span class="blue_scripting">Think about interactive maps you have used. Interactive maps can help you understand information as you click on cities or areas and learn more about a place.</span> Direct students’ attention to the text, making certain they understand how to click a spot on the map. Ask: <span class="blue_scripting">What happens when you click a spot on the map?</span> Guide students to understand that an interactive map provides more information about a place. Ask students how using the map is different from reading the information in a text.</p>
+                    <p>Return to the T-chart. At the top of the right column write “Maps.” Work with the class to fill in the column with examples of how maps help readers understand the text. For example: “provide more information about a place”</p>
+
+                    <h2 id="scrollTop_s5_5">After Reading</h2>
+                    <h3 class="normaltext mb2"><span class="bold uppercase">Vocabulary</span></h3>
+                    <p>After students have read <i>Weather in the United States</i>, have them review their completed two-column charts. Ask: <span class="blue_scripting">Are there any more words you would like to add?</span>
+                    </p>
+                    <p>Display these images from <i>Weather in the United States</i> to help students as they think about words related to the weather, such as <i>tornado, climate,</i> and <i>hazards</i>.</p>
+                    <p>[images from the book for each word for the teacher to project: tornado from Midwest hotspot winter storm from Northeast hotspot flood image from South hotspot]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold uppercase">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections among <i>Weather in the United States</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li>In <i>Severe Weather in the United States</i>, you learned about preparing for tornadoes. What information have you read in other texts about preparing for severe weather?</li>
+                        <li><i>Severe Weather in the United States</i> explains that floods can happen in all fifty states in the United States. What have you learned about floods in other texts you have read?</li>
+                        <li>Think about the types of homes you read about in <i>Living in Places with Extreme Weather</i>. In which U.S. regions would these homes be useful?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts</span> After the discussion, have students return to the <a href="javascript:void(0);">Solving Weather Problems: Track the Texts</a> graphic organizer. Have them fill in the <i><span class="bold">Weather in the United States</span></i> row with something they learned about different climates and extreme weather in U.S. regions.</p>
+                    <h3 class="normaltext"><span class="bold uppercase">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion related to this text’s Big Question: <i>How do people solve weather-related issues?</i> As students share their ideas, draw out more information from them with follow-up questions such as the following: “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>Why is it important to prepare for a hurricane?</li>
+                        <li>If you were preparing for a flood, what would you do first? Why?</li>
+                        <li>What are some other ways of preparing for the weather? How do they solve weather-related problems?</li>
+                    </ul>
+                    <button class="blue-button mb20" id="btn-discussiontip">Discussion Tips</button>
+                    <h3 class="normaltext"><span class="bold uppercase">Write About the Big Question</span></h3>
+                    <p>Have students choose one region of the United States. Ask them to create a poster or infographic with facts about an issue with severe weather in the region and ways to prepare for the issue or respond to the problem.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-text5" class="container-fs slide slide-text5 inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_1"
+                                    href="#scrollTop_s6_1">Instructional Focus</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_2" href="#scrollTop_s6_2">Summary</a>
+                            </li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_3" href="#scrollTop_s6_3">Before
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_4" href="#scrollTop_s6_4">During
+                                    Reading</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s6_5" href="#scrollTop_s6_5">After
+                                    Reading</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Forecasting the Weather</h1>
+                    <div class="title-bottom-text">
+                        by Priscilla Chang <br>Informational Text - Word Count: 513 &nbsp; Lexile: 740L
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s6_1">Instructional Focus</h2>
+                    <ul>
+                        <li>
+                            <p><span class="bold">Science Standard</span> Make a claim about the merit of a design solution that reduces the impacts of a weather-related hazard.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Content Objective</span> Students will learn about tools used by meteorologists to develop weather forecasts.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Language Objective</span> Students will describe details about tools used in weather forecasting.</p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Structure Objective</span> Students will understand how a descriptive text structure helps explain the features and </p>
+                        </li>
+                        <li>
+                            <p><span class="bold">Text Feature Objective</span> Students will recognize the value of photographs and captions in helping them understand information about a specific topic.</p>
+                        </li>
+                    </ul>
+                    <h2 id="scrollTop_s6_2">Summary</h2>
+                    <p>This photo essay identifies, describes, and provides photographs of tools used in forecasting the weather.</p>
+                    <h2 id="scrollTop_s6_3">Before Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Big Question</span></h3>
+                    <p>Remind students of the Big Question: <i>How do people solve weather-related issues?</i> Ask: <span class="blue_scripting">How do you think <i>Forecasting the Weather</i> will help you think about the Big Question? How can weather forecasts help people solve or respond to a problem?</span></p>
+
+                    <h3 class="normaltext"><span class="bold">Preview Vocabulary</span></h3>
+                    <p>Have students find and read sentences in the text that have the following words: <i><span class="bold">meteorologist</span></i> and <i><span class="bold">emergencies.</span></i> Discuss the meaning of each word or phrase with the class. Ask: <span class="blue_scripting">A <span class="bold">meteorologist</span> is a scientist who studies the weather. What do you think a <span class="bold">meteorologist</span> does? <span class="bold">Emergencies</span> are dangerous situations. What are some examples of weather <span class="bold">emergencies</span>?</span></p>
+                    <h3 class="normaltext"><span class="bold">Oral Vocabulary</h3>
+                    <p>Some of the vocabulary in <i>Raising Chicago</i> might be new or challenging, such as <i><span class="bold">materials</span></i> or <i><span class="bold">forecast</span></i>. During class discussions, use these new terms repeatedly to help students become familiar with them. For example: <span class="blue_scripting">What <span class="bold">materials</span> can help protect homes from wind?</span> Or: <span class="blue_scripting">A <span class="bold">forecast</span> is a prediction. What would you expect to see in a weather <span class="bold">forecast</span>?</span></p>
+                    <h3 class="normaltext"><span class="bold">TWO-COLUMN CHART</span></h3>
+                    <p>Share a two-column chart with headings <i>Problems</i> and <i>Solutions</i>, and have students create two-column charts of their own. Encourage students to use vocabulary words as they think of problems and solutions to add to their charts. For example, they can add the phrase <i>weather emergencies</i> in the <i>Problems</i> column, and the word <i>forecast</i> and in the <i>Solutions</i> column. A completed chart might look like this:</p>
+                    <p>[Create two-column chart with heads Problems and Solutions. Include the following words in each column: Problems: weather emergencies, hurricanes Solutions: forecasts, storm warnings]</p>
+
+                    <h2 id="scrollTop_s6_4">During Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Elements of Informational Text</span></h3>
+                    <p><span class="bold">Text Structure</span> Explain that <i>Forecasting the Weather</i> uses a descriptive structure. Say: <span class="blue_scripting">When an author writes to describe, the author gives specific details and examples. In this text, the writer is describing tools used by meteorologists to forecast the weather.</span></p>
+                    <p>Display a T-chart graphic organizer. At the top of the left column, write “Descriptive Structure.” Work with the class to fill in the column with what they know about this structure, and how it helps them understand the writer’s ideas. For example: “gives details and examples”</p>
+                    <p><span class="bold">Text Features</span> Say: <span class="blue_scripting">Think about texts you have you read that have photographs. Photographs can help to make a topic clearer.</span> Ask students what they think of when they hear the word balloon Then, point out the image of a weather balloon on page x. Say:<span class="blue_scripting">This is a weather balloon, which scientists use to gather information about conditions in the air. How does the photo help you understand what a weather balloon is? How is it different from other balloons?</span></p>
+                    <p>Return to the T-chart. At the top of the right column write “Photographs.” Work with the class to fill in the column with examples of how pictures help readers understand the text. For example: “help make a topic clearer”</p>
+
+                    <h2 id="scrollTop_s6_5">After Reading</h2>
+                    <h3 class="normaltext"><span class="bold">Vocabulary</span></h3>
+                    <p>After students have read <i>Forecasting the Weather</i>, have them review their completed two-column charts. Ask: <span class="blue_scripting">Are there any more words you would like to add?</span></p>
+                    <p>Display these images from <i>Forecasting the Weather</i> to help students as they think about words related to the weather, such as <i>forecast, meteorologist</i>, and <i>hurricane</i>.</p>
+                    <p>[images from the book for each word for the teacher to project: image from screen 12: meteorologist gives forecast image from screen 11: meteorologist tracks hurricane image from screen 9: weather satellite shows hurricane forming]</p>
+                    <p>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="card b0">
+                                <div class="card-body img-card">
+                                    <img src="assets/images/Screen_afterReading3.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </p>
+                    <h3 class="normaltext"><span class="bold">Discuss Across Texts</span></h3>
+                    <p>Encourage students to make connections between <i>Forecasting the Weather</i> and other texts they have read on related subjects.</p>
+                    <ul class="small-bullet">
+                        <li><i>Forecasting the Weather</i> describes what meteorologists do. What else have you read about meteorologists or other scientists?</li>
+                        <li>In <i>Forecasting the Weather</i>, you learned about how meteorologists’ tools help them forecast the weather. What else have you read about the importance of weather forecasts?</li>
+                        <li>Think about what you learned about homes that protect people from severe weather in <i>Living in Places with Extreme Weather</i>. In what way do the tools in <i>Forecasting the Weather</i> help to protect people?</li>
+                    </ul>
+                    <p><span class="bold">Track the Texts</span> After the discussion, have students return to the <a href="javascript:void(0);">Solving Weather Problems: Track the Texts</a> graphic organizer. Help them fill in the <i><span class="bold">Forecasting the Weather</span></i> row with something they learned about ways of predicting the weather.</p>
+                    <h3 class="normaltext"><span class="bold">Discuss The Big Question</span></h3>
+                    <p>Lead a class discussion related to this text’s Big Question: <i>How do people solve weather-related issues?</i> As students share their ideas, draw out more information from them with follow-up questions such as the following: “Can you say more about that?” or “What are some examples of that?”</p>
+                    <ul class="small-bullet">
+                        <li>How do meteorologists help people prepare for severe weather?</li>
+                        <li>Do you think meteorologists like to solve problems? Explain.</li>
+                    </ul>
+                    <button class="blue-button mb20">Tips and Tools</button>
+                    <h3 class="normaltext"><span class="bold">Write About the Big Question</span></h3>
+                    <p>Have students write a persuasive paragraph to try to convince people to become a meteorologist. Tell them to include information about why a meteorologist’s job is important for helping people prepare for weather problems. Suggest they use words such as should, reason, and fact as they write.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="slide-after-reading" class="container-fs slide slide-after-reading inactive" aria-hidden="true">
+        <div class="banner-bg-small"></div>
+        <div class="container-mxw">
+            <div class="left-side-bar">
+                <div class="side-nav">
+                    <div class="side-nav-circle"></div>
+                    <nav>
+                        <ul role="menu">
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_1" href="#scrollTop_s7_1">Wrap It
+                                    Up</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_2" href="#scrollTop_s7_2">Vocabulary
+                                    Round-Up</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_3" href="#scrollTop_s7_3">Discuss the
+                                    Text Set's Big Question</a></li>
+                            <li role="none"><a role="menuitem" refid="scrollTop_s7_4" href="#scrollTop_s7_4">Culminating
+                                    Project</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="content-panel">
+                <div class="title-wrap">
+                    <h1 class="title">Solving Weather Problems</h1>
+                    <div class="title-bottom-text">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h2 id="scrollTop_s7_1">Wrap It Up</h2>
+                    <p>Now that the class has read some or all of the texts in this set, it is time to pull together all the information they have learned from their reading in order to explore and share their evolving understanding of the Big Question.</p>
+
+                    <h2 id="scrollTop_s7_2">Vocabulary Round-Up</h2>
+                    <p>Ask students to review their two-column charts. Then, on a single sheet of paper, have students create two word webs, side-by-side: one labeled <i>Problem</i> in the center and the other labeled <i>Solution</i> in the center. Tell students to write words or phrases on each web to show weather problems and solutions they read about. Then ask them to draw arrows connecting the problems to the solutions.</p>
+                    <h2 id="scrollTop_s7_3">Discuss the Text Set's Big Question</h2>
+                    <p>Guide a class discussion related to the Big Question: <i>How do people solve weather-related issues?</i> Encourage students to bring in knowledge they have learned from all the texts they have read in the text set, using as many of the words from their graphic organizers as they can.</p>
+                    <ul class="small-bullet">
+                        <li>What did you already know about problems with severe weather before you began reading this text set?</li>
+                        <li>You’ve read many books about weather problems and solutions. What new information have you learned?</li>
+                        <li>What would you still like to learn about preparing for extreme weather or solving weather problems?</li>
+                        <li>Tell about some texts you’ve read that are most useful in helping you answer the Big Question.</li>
+                    </ul>
+                    <button class="blue-button mb20" id="btn-discussiontip">Discussion Tips</button>
+                    <h2 id="scrollTop_s7_4">Culminating Project</h2>
+                    <p>Have students apply what they’ve learned from the text set to demonstrate and enhance their understanding.</p>
+                    <h3 class="normaltext"><span class="bold">Designing a Home for Extreme Weather</span></h3>
+                    <p>Remind students of types of severe weather they have read about, including hurricanes, tornadoes, floods, and extremely hot or cold weather. Ask them to choose one weather hazard, then use what they learned to design a house or building that helps protect people from the hazard. Ask students to create a diagram with labels to point out features of the building, then write a paragraph explaining how the features keep people safe.</p>
+                    <p>Have students present and discuss their diagrams. Guide the class to discuss each solution and add other ideas for solving the weather problem.</p>
+                    <p>Students can refer to information they have written in <i>Write About the Big Question</i> for each text to aid their thinking and planning. They may also use the <a href="javascript:void(0);" class="activitySupport" popupref="popup-ar-31">Project Template</a> to help them organize and clarify their thinking as they plan their projects. Encourage students to use the vocabulary they’ve learned from the texts in the booklets and presentations.</p>
+                    <p class="last-p">&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fs-popup disclaimer disnone" aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <h2 tabindex="-1" class="popup-content-title">Disclaimer</h2>
+                            <p>
+                                By clicking the highlighted text, you will be leaving the Savvas NOW Program to enter
+                                into an
+                                external website that may contain content or resources for adults. Savvas does not
+                                guarantee, approve or
+                                endorse the content, resources or products available at these websites, nor does a link
+                                indicate any
+                                association with or endorsement by the linked website to Savvas Learning Company LLC.
+                                The linked website
+                                has its own legal terms and policies, including a privacy policy and community
+                                guidelines. We recommend
+                                that you review any terms of use and all policies and guidelines of such websites before
+                                supplying
+                                information to or otherwise using those websites or their products and services. We at
+                                Savvas Learning
+                                Company LLC do not control these third party websites and are not responsible or liable
+                                for the
+                                performance of these websites, their services or any of the content and resources
+                                contained on them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button  id="disclaimerClose" aria-label="Close" class="popup-close-btn"><i class="far fa-times-circle"></i></button>
+    </div>
+    <div class="container-fs-popup activitySupport popup-ar-31  disnone " aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <h2 tabindex="-1" class="popup-left-title">Project Template</h2>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+                            <div class="tableWrapper ptemplate">
+                                <table class="table table-bordered tableProjTemp">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 30%;">Name:</th>
+                                            <th style="width: 30%;">Book Title:</th>
+                                            <th style="width: 30%;">Big Question:</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="3">
+                                                <p><span class="bold">Project Description:</span></p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                <p><span class="bold">Resources:</span></p>
+                                                <p>List the resources you used to complete your project.</p>
+                                            </td>
+                                            <td colspan="2">
+                                                <ul class="small-bullet">
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1">
+                                                <p><span class="bold">Big Question Connection:</span></p>
+                                                <p>Write two to three sentences explaining how your project addresses
+                                                    the
+                                                    Big
+                                                    Question.
+                                                </p>
+                                            </td>
+                                            <td colspan="2">
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" style="border-bottom: 0;">
+                                                <p><span class="bold">Reflection:</span></p>
+                                                <p>Think about the book’s characters, setting, and plot. How was this
+                                                    book a
+                                                    mirror for
+                                                    you? How was it a window?</p>
+
+                                            </td>
+                                            <td colspan="2" style="border-bottom: 0;">
+                                                <p>This text was a mirror for me because ...</p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>This text was a window for me because ...</p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="1" style="border-top: 0;">
+                                                <p>How might your project be a mirror or a window for others?</p>
+                                            </td>
+                                            <td colspan="2" style="border-top: 0;">
+                                                <p>My project might be a <span class="sr-only">fill in the blank
+                                                        lines</span>_________ (mirror/window) for others because...</p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                                <p>
+                                                    <hr>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="ac-popup-close-btn" aria-label="Close"><i class="far fa-times-circle" aria-hidden="true"></i></button>
+    </div>
+    <div class="container-fs-popup activitySupport popup-ar-32  disnone " aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <h2 tabindex="-1" class="popup-left-title leftalig-nmt0">Project Rubric</h2>
+                    <table class="table table-bordered table-ar-32">
+                        <caption style="caption-side:top;">4-Point research Project Rubric</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Score</th>
+                                <th scope="col">Focus</th>
+                                <th scope="col">Organization</th>
+                                <th scope="col">Visuals/Media</th>
+                                <th scope="col">Language</th>
+                                <th scope="col">Delivery</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>The topic is clear, convincing, and effectively addresses the Big Question</td>
+                                <td>Ideas are clear and well organized.</td>
+                                <td>Visuals/media are engaging, appealing, and effectively support ideas presented.</td>
+                                <td>Language is clear and precise. Vocabulary is specific and appropriate.</td>
+                                <td>Presenter employs appropriate eye contact, speaking rate, and enunciation.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>The topic is mostly clear and sufficiently addresses the Big Question.</td>
+                                <td>Ideas are mostly clear and well organized. </td>
+                                <td>Visuals/media are mostly engaging, appealing, and support ideas presented. </td>
+                                <td>Language is mostly clear and includes appropriate vocabulary. </td>
+                                <td>Presenter employs mostly appropriate eye contact, speaking rate, and enunciation.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>The topic is <u>not</u> always clear and only partially addresses the Big Question.
+                                </td>
+                                <td>Ideas are sometimes confusing and <u>not</u> well organized.</td>
+                                <td>Visuals/media are not always engaging and only partially support ideas presented.
+                                </td>
+                                <td>Language is often vague and/or unclear. Vocabulary is overly general. </td>
+                                <td>Eye contact, speaking rate, and enunciation are uneven.</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>The topic is confusing and unrelated to the Big Question.</td>
+                                <td>Ideas are confusing and unorganized.</td>
+                                <td>Visuals/media are <u>not</u> engaging and/or do <u>not</u> support ideas presented.
+                                </td>
+                                <td>Language is vague and unclear. Vocabulary may be used incorrectly.</td>
+                                <td>There is little command of presentation skills. </td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>Response is unintelligible, illegible, and off topic or no response is given.</td>
+                                <td>Response is unintelligible, illegible, and off topic or no response is given.</td>
+                                <td>Visuals/media are unintelligible, illegible, and off topic or not included.</td>
+                                <td>Response is unintelligible, illegible, and off topic or no response is given.</td>
+                                <td>Presentation is unintelligible, off topic, or not delivered.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button class="ac-popup-close-btn" aria-label="Close"><i class="far fa-times-circle"></i></button>
+    </div>
+    <div class="container-fs-popup discussiontip disnone" aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-2 popup-concave-col" aria-hidden="true">
+            </div>
+            <div class="col-10 popup-content-col">
+                <div class="popup-content-scroller">
+                    <h2 tabindex="-1" class="popup-content-title">Discussion Tips</h2>
+                    <p>An important part of building a vibrant classroom culture is creating an atmosphere in which all
+                        students feel empowered to participate in powerful classroom conversation. You may have noticed
+                        that
+                        your students who are naturally extroverted often participate freely in a whole-class
+                        discussion,
+                        while those who are more introverted or, perhaps, who come from cultures that respect different
+                        classroom norms, may need encouragement to share. You can use sentence prompts like these to
+                        invite
+                        all students into the conversation:</p>
+                    <p>“That’s so interesting … please tell me more!”</p>
+                    <p>“Can someone explain that in a different way?”</p>
+                    <p>“What are some examples of that?”</p>
+                    <p>“Can someone add on to that idea?”</p>
+                    <p>Sharing and discussing ideas will often involve agreeing and/or disagreeing with what others say.
+                        As
+                        students listen carefully and respond thoughtfully to their classmates’ ideas, encourage them to
+                        express themselves in respectful and constructive ways. You may wish to post these sentence
+                        starters
+                        prominently, so students can refer to them often:</p>
+                    <p>“I agree, and I also think <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>“I mostly agree, but <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>“I like what you just said because <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>“I respectfully disagree because <span class="sr-only">fill in the blank line</span><span
+                            class="solidl">__________</span> .”</p>
+                    <p>For more tips and guidance on classroom discussions, see these helpful resources.</p>
+                    <p>Chapin, Suzanne H., O'Connor, Catherine, and Canavan Anderson, Nancy (2009). Talk Moves.
+                        <br><a target="_blank"
+                            href="https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf">https://www.edutopia.org/sites/default/files/2019-11/Talk_Moves_2_UP.pdf</a>
+                    </p>
+                    <p>O’Conner, Cathy (2021). Information and Resources: Discussion and Debate in the Classroom. <br>
+                        To find this site, copy and paste this URL into your browser:
+                        https://www.serpinstitute.org/wordgen-elementary/discussion-and-debate
+                    </p>
+                    <p>Toro, Stephanie (2021). How to Engage More Students in Classroom Discussions. <br><a
+                            target="_blank"
+                            href="https://www.edutopia.org/article/how-engage-more-students-classroom-discussions">https://www.edutopia.org/article/how-engage-more-students-classroom-discussions</a>
+                    </p>
+                    <p>Zwiers, Jeff (2020). Enhancing learning with authentic communication.
+                        <br>To find this site, copy and paste this URL into your browser: https://Jeffzwiers.org
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button id="discussiontipClose" class="popup-close-btn" aria-label="Close"><i class="far fa-times-circle"></i></button>
+    </div>
+
+    <div class="container-fs-popup fullmoon disnone" aria-hidden="true">
+        <div class="row popup-main-row">
+            <div class="col-12 popup-content-col" style="text-align: center;">
+                <img class="popupimage-large" src="assets/images/download1.png" alt="Name the Full Moons">
+            </div>
+        </div>
+        <div class="hiddenarea">
+        <button id="fullmoonClose" aria-label="Close"  class="popup-close-btn"><i class="far fa-times-circle"></i></button>
+        </div>
+            
+    <div id="selectedMenuText" class="sr-only">Selected </div>
+    <div class="sr-only" role="region" id="livecontent" aria-live="polite"></div>
+    <script src="assets/js/utility.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
