@@ -127,8 +127,8 @@
     }
 
     .content-panel .title-wrap .title {
-        font-size: 34px;
-    }
+        font-size: 26px;
+    }	
 
     .content-panel .title-wrap .title-bottom-text {
         font-size: 14px;
@@ -220,7 +220,7 @@
     }
 
     .slide-text1 .content-panel .text-content {
-        padding-top: 15px;
+        padding-top: 26px;
     }
 
     .slide-text2 .content-panel .text-content {
@@ -228,7 +228,7 @@
     }
 
     .slide-text3 .content-panel .text-content {
-        padding-top: 15px;
+        padding-top: 39px;
     }
 
     .slide-text4 .content-panel .text-content {
@@ -236,7 +236,7 @@
     }
 
     .slide-text5 .content-panel .text-content {
-        padding-top: 15px;
+        padding-top: 39px;
     }
 
     .slide-after-reading .content-panel .text-content {
@@ -317,7 +317,7 @@
         /*height: 220px;*/
     }
     .content-panel .title-wrap .title {
-        font-size: 32px;
+        font-size: 31px;
     }
     .slide-text1 .content-panel .text-content {
         padding-top: 15px;
@@ -337,7 +337,7 @@
     }
 
     .slide-text5 .content-panel .text-content {
-        padding-top: 15px;
+        padding-top: 28px;
     }
 
     .slide-after-reading .content-panel .text-content {
@@ -428,7 +428,7 @@
         height: 225px;
     }
     .content-panel .title-wrap .title {
-        font-size: 28px;
+        font-size: 27px;
     }
     .content-panel .title-wrap .title-bottom-text {
         font-size: 12px;
