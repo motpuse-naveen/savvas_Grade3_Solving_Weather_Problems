@@ -607,6 +607,34 @@ table.table-style2 .trbg {
     font-family: 'poppins-semibold';
 }
 
+table.table-style3 {
+    border: 0.5px solid #000000;
+    font-family: 'poppins-light';
+}
+
+table.table-style3 th {
+    border: 0.5px solid #000000;
+    padding: 0px 5px;
+    font-weight: bold;
+    font-family: 'poppins-semibold'
+}
+
+table.table-style3 td {
+    border: 0.5px solid #000000;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+table.table-style3 tr {
+    text-align: center;
+}
+
+table.table-style3 .trbg {
+    background-color: #efefef;
+    font-weight: bold;
+    font-family: 'poppins-semibold';
+}
+
 .span-disc {
     height: 5px;
     width: 5px;
