@@ -11,10 +11,10 @@ $(document).ready(function () {
     document.addEventListener('click', function (e) {
         $('body').removeClass('show-focus-outlines');
     });
-    $(".cardmarginTop").removeClass("cardmarginTop")
     setTimeout(function () {
-        //$(".cardmarginTop").removeClass("cardmarginTop")
-    },1000)
+        $(".cardmarginTop").removeClass("cardmarginTop")
+    },0)
+    
     setTimeout(function () {
         $(".white-bg").removeClass("white-bg")
         $("body.black").removeClass("black")
