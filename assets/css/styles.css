@@ -348,7 +348,7 @@ body, html {
 }
 
 .card-cover-img {
-    min-height: 249px;
+    /*min-height: 249px;*/
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
@@ -995,6 +995,17 @@ a.graylink{
 .CarouselDots .dot.active {
     background-color: #999999;
 }
+.cardmarginTop{
+    position: relative;
+    margin-top: 249px;
+    display: none;
+}
+.card-cover-img.FixHeight{
+    height: 249px;
+}
+.card-cover-img.MinHeight{
+    min-height: 249px;
+}
 /*Annimation*/
 .annim1{
     animation: floatText 2s normal;
@@ -1180,7 +1191,7 @@ a.graylink{
   }
   @-webkit-keyframes textSlideTop{
     from {
-        margin-top: 206px;
+        margin-top: 249px;
     }
   
     to {
@@ -1195,12 +1206,12 @@ a.graylink{
   
     to {
       /* left: auto; */
-      height: 206px;
+      height: 249px;
     }
   }
   @-webkit-keyframes cardSlide{
     from {
-        margin-top: 206px;
+        margin-top: 249px;
     }
   
     to {
@@ -1220,5 +1231,6 @@ a.graylink{
   }
   
   .bold_active{font-size:16px; font-family: "poppins-bold";}
+  .forceHide{display: none !important;}
 
 /**/

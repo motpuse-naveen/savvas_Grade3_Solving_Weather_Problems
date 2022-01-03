@@ -7,9 +7,14 @@ $(document).ready(function () {
             $('body').addClass('show-focus-outlines');
         }
     });
+    //$(".forceHide").removeClass("forceHide")
     document.addEventListener('click', function (e) {
         $('body').removeClass('show-focus-outlines');
     });
+    $(".cardmarginTop").removeClass("cardmarginTop")
+    setTimeout(function () {
+        //$(".cardmarginTop").removeClass("cardmarginTop")
+    },1000)
     setTimeout(function () {
         $(".white-bg").removeClass("white-bg")
         $("body.black").removeClass("black")
@@ -37,7 +42,7 @@ $(document).ready(function () {
         $(".annim4-555").removeClass("annim4-555")
         
         $(".annim-fade").removeClass("annim-fade")
-        
+        $(".card-cover-img").removeClass("FixHeight").addClass("MinHeight")
 
         InitCarousel();
     }, 3000)
