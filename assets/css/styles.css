@@ -1012,7 +1012,11 @@ table.kwlchart {
     border: 0px solid #000000;
     font-family: 'poppins-light';
     width: 100%;
-    max-width: 550px;
+    
+}
+
+table.kwlchart.maxwdt{
+    max-width: 600px;
 }
 
 table.kwlchart th {
@@ -1023,6 +1027,7 @@ table.kwlchart th {
     text-align: center;
     border-top: 0px;
     padding: 20px 10px;
+    width: 50%;
 }
 table.kwlchart thead tr th:first-child {
     border-left: 0px;
