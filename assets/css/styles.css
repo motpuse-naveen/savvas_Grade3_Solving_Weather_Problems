@@ -726,13 +726,15 @@ a.graylink{
     background-color: #eeeeee;
     font-family: 'poppins-semibold';
 }
+.tbl-track-the-txt{
+    padding-bottom: 20px !important;
+}
 .table-dr-2{
     font-family: 'poppins-semibold';
 }
 .table-dr-2 th{
-    border: 1px solid #000000;
+    border: 1px solid #000000 !important;
     font-family: 'poppins-bold';
-    
     text-align:center;
 }
 .table-dr-2 td{
@@ -823,7 +825,8 @@ a.graylink{
 
 }
 .tableProjTemp {
-    border:0px
+    border:0px;
+    margin-top: 12px;
 }
 .tableProjTemp th{
     border: 0px;
@@ -843,6 +846,10 @@ a.graylink{
     padding: 40px;
     border: 1px solid #000000;
     position: relative;
+}
+
+.tbl-project-temp-wrap{
+    padding-bottom: 20px !important;
 }
 
 .popup-main-row{
